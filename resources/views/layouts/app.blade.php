@@ -13,7 +13,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    <script src="https://use.fontawesome.com/2ccbb484a1.js"></script>
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 
     <style>
         body {

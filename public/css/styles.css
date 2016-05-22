@@ -1,0 +1,42 @@
+#video-library > div.row {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+div.video {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.project {
+    position: relative;
+}
+div.project .title {
+  margin-top: -7.5px;
+  padding-top: 30px;
+  padding-right: 35px;
+  min-height: 75px;
+  background: #ecf0f1; }
+
+  div.project p {
+  border-top: 1px dotted #d3d3d3;
+  padding: 5px;
+  color: #979797; }
+
+    .verify-badge {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top:0;
+        left:100;
+        color:#fff;
+        padding:5px;
+    }
+
+  div.verified {
+    background: green;
+  }
+
+   div.unverified {
+    background: red;
+  }
