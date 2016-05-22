@@ -20,7 +20,10 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href="{{ route('new_project') }}" class="btn btn-success pull-right">Add new Project</a>
+            <div class="pull-right">
+                <a href="{{ route('new_project') }}" class="btn btn-success">Add new Project</a>
+                <a href="{{ route('profile_update') }}" class="btn btn-success">Update Profile</a>
+            </div>
         </div>
         <div id="video-library" class="col-md-12">
             @foreach(collect([1,2,3,4,5,6,7,8])->chunk(4) as $projects)
