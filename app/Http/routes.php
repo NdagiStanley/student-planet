@@ -26,3 +26,8 @@ Route::get('/employer/dashboard', [
     'uses' => 'EmployerController@index',
     'as' => 'employer_dashboard'
 ]);
+
+Route::get('/student/projects/new', [
+    'uses' => 'UserController@newProject',
+    'as' => 'new_project'
+]);

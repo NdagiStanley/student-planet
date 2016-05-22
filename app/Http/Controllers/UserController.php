@@ -12,4 +12,9 @@ class UserController extends Controller
     {
         return view('student.student_profile');
     }
+
+    public function newProject()
+    {
+        return view('student.new_project');
+    }
 }
