@@ -2,4 +2,5 @@ vendor/
 node_modules/
 .env
 .env.example
-studentplanet.db
+database/studentplanet.db
+*.db
