@@ -17,4 +17,9 @@ class UserController extends Controller
     {
         return view('student.new_project');
     }
+
+    public function profileUpdate()
+    {
+        return view('student.profile_update');
+    }
 }

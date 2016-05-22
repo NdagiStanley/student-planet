@@ -22,12 +22,22 @@ Route::get('/student/profile', [
     'as' => 'student_profile'
 ]);
 
+Route::get('/student/projects/new', [
+    'uses' => 'UserController@newProject',
+    'as' => 'new_project'
+]);
+
+Route::get('/student/profile/update', [
+    'uses' => 'UserController@profileUpdate',
+    'as' => 'profile_update'
+]);
+
 Route::get('/employer/dashboard', [
     'uses' => 'EmployerController@index',
     'as' => 'employer_dashboard'
 ]);
 
-Route::get('/student/projects/new', [
-    'uses' => 'UserController@newProject',
-    'as' => 'new_project'
+Route::get('/employer/tasks/new', [
+    'uses' => 'EmployerController@newTask',
+    'as' => 'employer_task'
 ]);
