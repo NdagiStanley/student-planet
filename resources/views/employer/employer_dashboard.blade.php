@@ -22,7 +22,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 list-group">
+                <div class="col-md-4">
                     <div class="list-group">
                       <a href="#" class="list-group-item active">
                         <h4 class="list-group-item-heading">Bio</h4>

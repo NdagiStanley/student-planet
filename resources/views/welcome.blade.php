@@ -11,10 +11,11 @@
         <div class="landing-page-call-to-action">
 
         @if (Auth::user() and Auth::user()->account == 'employer')
-            <a href="{{ route('new_project') }}" class="btn btn-default">Add Projects</a> <a href="{{ route('student_profile') }}" class="btn btn-success">Profile</a>
-        @elseif (Auth::user() and Auth::user()->account == 'student')
-            <a href="{{ route('new_project') }}" class="btn btn-default">Add Projects</a>
+            <a href="{{ route('new_project') }}" class="btn btn-default">Add Tasks</a>
             <a href="{{ route('student_profile') }}" class="btn btn-success">Profile</a>
+        @elseif (Auth::user() and Auth::user()->account == 'student')
+            <a href="{{ route('employer_task') }}" class="btn btn-default">Add Projects</a>
+            <a href="{{ route('employer_profile_update') }}" class="btn btn-success">Profile</a>
         @endif
 
         </div>
