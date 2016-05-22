@@ -12,4 +12,14 @@ class EmployerController extends Controller
     {
         return view('employer.employer_dashboard');
     }
+
+    public function newTask()
+    {
+        return view('employer.employer_newtask');
+    }
+
+    public function profileUpdate()
+    {
+        return view('employer.employer_profileupdate');
+    }
 }

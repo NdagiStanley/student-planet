@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="col-md-12">
-                <a href="{{ route('new_project') }}" class="btn btn-success pull-right">Add Job/ Task</a>
+                <a href="{{ route('employer_task') }}" class="btn btn-success pull-right">Add Job/ Task</a>
             </div>
         </div>
     @endsection

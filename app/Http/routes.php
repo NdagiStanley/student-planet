@@ -41,3 +41,8 @@ Route::get('/employer/tasks/new', [
     'uses' => 'EmployerController@newTask',
     'as' => 'employer_task'
 ]);
+
+Route::get('/employer/profile/update', [
+    'uses' => 'EmployerController@profileUpdate',
+    'as' => 'employer_profile_update'
+]);
