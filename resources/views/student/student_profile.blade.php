@@ -22,5 +22,23 @@
         <div class="col-md-12">
             <a href="{{ route('new_project') }}" class="btn btn-success pull-right">Add new Project</a>
         </div>
+        <div id="video-library" class="col-md-12">
+            @foreach(collect([1,2,3,4,5,6,7,8])->chunk(4) as $projects)
+                <div class="row">
+                @foreach($projects as $project)
+
+                    <div class="col-md-3 project">
+                        <img src="{{ asset('images/project.jpg') }}" class="img-thumbnail">
+                        <h4 class="title">The cool title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu efficitur justo. Curabitur sapien purus, tempor nec metus vel, finibus tempus nibh. Proin in mi diam. Integer nec diam sagittis odio ullamcorper facilisis. Mauris et eros ultrices, tempor ex sit amet</p>
+                        @if($project % 2 == 0)
+                            <div class="verify-badge  verified"><i class="fa fa-thumbs-o-up"></i></div>
+                        @endif
+                        <a href="#">Project Link</span></a>
+                    </div>
+                @endforeach
+                </div>
+            @endforeach
+        </div>
     </div>
 @endsection
