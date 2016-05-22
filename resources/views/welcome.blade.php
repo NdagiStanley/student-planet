@@ -8,7 +8,14 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Your Application's Landing Page.
+                    @if(Auth::user() and Auth::user()->account == "student")
+
+                       <a href="/student/profile">Student Profile</a>
+                    @elseif(Auth::user() and Auth::user()->account == "employer")
+                        <a href="/employer/dashboard">Employer Dashboard</a>
+                    @else
+                        Not logged in
+                    @endif
                 </div>
             </div>
         </div>

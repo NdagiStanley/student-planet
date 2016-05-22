@@ -17,4 +17,12 @@ Route::get('/', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/student/profile', [
+    'uses' => 'UserController@index',
+    'as' => 'student_profile'
+]);
+
+Route::get('/employer/dashboard', [
+    'uses' => 'EmployerController@index',
+    'as' => 'employer_dashboard'
+]);
